@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import App from "./App";
 
 const router = createBrowserRouter([
@@ -22,6 +23,7 @@ if (rootElement) {
     
     <React.StrictMode>
       <Analytics />
+      <SpeedInsights/>
       <RouterProvider router={router} />
     </React.StrictMode>
   );
